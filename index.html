@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eren Koç</title>
+</head>
+<body>
+    <div class="container">
+<div class="top">
+    <div id="popup">
+       
+        <br>
+        <div id="popupcontent">
+           <li id="closeli"><img id="close" alt="close" src="img/close.png"></li> 
+            <a href="index.html"><li>Home</li></a>
+               <a href="index.html"><li>About</li></a>
+               <a href="index.html"><li>Products</li></a>
+               <a href="index.html"><li>Reference</li></a>
+               <a href="index.html"><li>Contact</li></a> 
+        </div>
+    </div>
+        <header>
+            <img class="logo" src="img/nikelogo.png" alt="">
+            <div class="menucontainer">
+            <ol>
+               <a href="index.html"><li>Home</li></a>
+               <a href="index.html"><li>About</li></a>
+               <a href="index.html"><li>Products</li></a>
+               <a href="index.html"><li>Reference</li></a>
+               <a href="index.html"><li>Contact</li></a> 
+            </ol>
+            <img src="img/menustate.png" alt="menu icon" id="menustate">
+        </div><!--menucontainer end-->
+        </header>
+        <div class="afis-container">
+            <div class="afis">
+                <div class="afis-top"><img src="img/shoes1.png" alt=""></div>
+                <div class="afis-desc">Air Jordan <br> <span class="price">$500</span>
+               <br>
+                    <button class="buy-it">Buy it</button>
+                </div>
+            </div>
+            <div class="afis">
+                <div class="afis-top"><img src="img/shoes1.png" alt=""></div>
+                <div class="afis-desc">Air Jordan <br> <span class="price">$500</span>
+               <br>
+                    <button class="buy-it">Buy it</button>
+                </div>
+            </div>
+            <div class="afis">
+                <div class="afis-top"><img src="img/shoes1.png" alt=""></div>
+                <div class="afis-desc">Air Jordan <br> <span class="price">$500</span>
+               <br>
+                    <button class="buy-it">Buy it</button>
+                </div>
+            </div>
+        </div>
+    </div><!--top end-->
+    </div><!--container end-->
+</body>
+</html>
+
+<script>
+    document.getElementById("menustate").addEventListener("click", function(){
+        
+        document.getElementById("popup").style.display = "flex";
+    });
+    
+    document.getElementById("close").addEventListener("click", function(){
+        
+        document.getElementById("popup").style.display = "none";
+    });
+    </script>
